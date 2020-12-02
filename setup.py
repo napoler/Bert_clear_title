@@ -17,27 +17,30 @@ def read_requirements(filename):
 # long_description="""
 
 # 这里是说明
-# 一个创建库的demo
-# http://www.terrychan.org/python_libs_demo/
+# 一个借助Bert提取标记的包，这里主要做标题清理
+# http://terrychan.org/Bert_clear_title
 # """
 
 long_description=read_file("README.md")
 setup(
-    name='tkitDemo', #修改包名字
+    name='Bert_clear_title', #修改包名字
     version='0.0.0.1',
-    description='Terry toolkit tkitDemo',
+    description='Terry toolkit Bert_clear_title',
     author='Terry Chan',
     author_email='napoler2008@gmail.com',
-    url='http://www.terrychan.org/python_libs_demo/',
-    install_requires=read_requirements('requirements.txt'),  # 指定需要安装的依赖
+    url='http://terrychan.org/Bert_clear_title/',
+    # install_requires=read_requirements('requirements.txt'),  # 指定需要安装的依赖
     long_description=long_description,
     long_description_content_type="text/markdown",
-    # install_requires=[
-    #     # 'beautifulsoup4==4.7.1',
+    install_requires=[
+        'regex==2020.2.20',
+        'numpy==1.19.4',
+        'transformers==2.8.0',
+        'torch==1.7.0',
+        'tqdm==4.38.0'
 
-
-    # ],
-    packages=['src'])
+    ],
+    packages=['Bert_clear_title'])
 
 """
 pip freeze > requirements.txt
