@@ -22,7 +22,8 @@ class Marker:
         可以从这里下载模型
 
         https://www.kaggle.com/terrychanorg/bert-title/output
-        
+        #模型下载自https://www.kaggle.com/terrychanorg/bertcleartitlemodel
+
         >>> Demo =Bert_clear_title.Marker(model_path="/mnt/data/dev/model/Bert_clear_title/model/")
         
         """
@@ -89,7 +90,7 @@ class Marker:
         model=self.model
         tokenizer=self.tokenizer
         model.eval()
-        # text=text
+        text=self.filterPunctuation(text)
         lenth=128
         # all_ms=[]
         datas=[]
@@ -118,7 +119,8 @@ class Marker:
             datas.append(data_one)
         return datas
 
-
+    def fix_unk(self,text,ids):
+        pass
 
     def cut_text(self,obj,sec):
         """

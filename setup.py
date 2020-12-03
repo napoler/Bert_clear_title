@@ -24,7 +24,7 @@ def read_requirements(filename):
 long_description=read_file("README.md")
 setup(
     name='Bert_clear_title', #修改包名字
-    version='0.0.0.1',
+    version='0.0.0.1.1',
     description='Terry toolkit Bert_clear_title',
     author='Terry Chan',
     author_email='napoler2008@gmail.com',

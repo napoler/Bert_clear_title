@@ -1,6 +1,5 @@
-regex==2020.2.20
+tqdm==4.38.0
 numpy==1.19.4
+regex==2020.2.20
 transformers==2.8.0
 torch==1.7.0
-tqdm==4.38.0
-tkitMarker_bert==0.0.0.8

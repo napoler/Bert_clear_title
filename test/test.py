@@ -23,7 +23,7 @@ print(one)
 
 print(Demo.get_mark_data(one[0]))
 
-{'title': ['可见其成是什么意思']}
+
 # {'title': ['可见其成是什么意思']}
 
 

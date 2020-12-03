@@ -160,7 +160,8 @@
 <span class="sd">        可以从这里下载模型</span>
 
 <span class="sd">        https://www.kaggle.com/terrychanorg/bert-title/output</span>
-<span class="sd">        </span>
+<span class="sd">        #模型下载自https://www.kaggle.com/terrychanorg/bertcleartitlemodel</span>
+
 <span class="sd">        &gt;&gt;&gt; Demo =Bert_clear_title.Marker(model_path=&quot;/mnt/data/dev/model/Bert_clear_title/model/&quot;)</span>
 <span class="sd">        </span>
 <span class="sd">        &quot;&quot;&quot;</span>
@@ -227,7 +228,7 @@
         <span class="n">model</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">model</span>
         <span class="n">tokenizer</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">tokenizer</span>
         <span class="n">model</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>
-        <span class="c1"># text=text</span>
+        <span class="n">text</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">filterPunctuation</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
         <span class="n">lenth</span><span class="o">=</span><span class="mi">128</span>
         <span class="c1"># all_ms=[]</span>
         <span class="n">datas</span><span class="o">=</span><span class="p">[]</span>
@@ -256,7 +257,8 @@
             <span class="n">datas</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data_one</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">datas</span></div>
 
-
+<div class="viewcode-block" id="Marker.fix_unk"><a class="viewcode-back" href="../../res/Bert_clear_title.html#Bert_clear_title.marker.Marker.fix_unk">[文档]</a>    <span class="k">def</span> <span class="nf">fix_unk</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">text</span><span class="p">,</span><span class="n">ids</span><span class="p">):</span>
+        <span class="k">pass</span></div>
 
 <div class="viewcode-block" id="Marker.cut_text"><a class="viewcode-back" href="../../res/Bert_clear_title.html#Bert_clear_title.marker.Marker.cut_text">[文档]</a>    <span class="k">def</span> <span class="nf">cut_text</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">obj</span><span class="p">,</span><span class="n">sec</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>

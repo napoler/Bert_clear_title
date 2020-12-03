@@ -3,8 +3,18 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Bert_clear_title's documentation!
+Bert_clear_title 标题清理
 ======================================
+
+项目托管：https://github.com/napoler/Bert_clear_title
+
+一个用于标题清理的模块，需下载对应的模型，使用Bert模型训练获得，内存消耗稍微高点，如果使用GPU更快。
+
+安装：
+`
+pip install Bert_clear_title
+`
+模型下载：https://www.kaggle.com/terrychanorg/bertcleartitlemodel
 
 .. toctree::
    :maxdepth: 2
